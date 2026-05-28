@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Insycar - Distribuidora de pinturas automotriz, abrasivos y productos complementarios de marcas reconocidas. Asesoría técnica y calidad garantizada.">
+    <title>Insycar</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/InsycarLogo.jpg">
+</head>
+
+<body>
+
+    <!-- Top bar rojo -->
+    <div class="top-bar text-center text-white py-2" style="background-color: #e30613;">
+        <p class="mb-0">Distribuimos calidad automotriz</p>
+    </div>
+
+    <!-- Header principal -->
+    <header class="bg-dark text-white py-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <a href="index.html">
+                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="img-fluid logo-hover"
+                    style="max-height: 100px;">
+            </a>
+
+            <div class="search-bar flex-grow-1 mx-5">
+                <form id="searchForm" class="d-flex">
+                    <input type="text" id="searchInput" class="form-control rounded-pill-start"
+                        placeholder="Busca barnices, fondos, aerosoles...">
+                    <button type="submit" class="btn btn-danger rounded-pill-end"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <!--<div| class="user-icons d-flex align-items-center">
+                <a href="#" class="text-white mx-3"><i class="fas fa-user fa-lg"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fas fa-shopping-cart fa-lg"></i></a>
+            </div> -->
+        </div>
+    </header>
+
+    <!-- Menú principal simplificado -->
+    <nav class="category-menu text-center py-3" style="background-color: #003366;">
+        <div class="container">
+            <a href="index.html" class="text-white mx-4 text-uppercase fw-bold">Inicio</a>
+            <a href="sobreNosotors.html" class="text-white mx-4 text-uppercase fw-bold">Nosotros</a>
+            <a href="productos.html" class="text-white mx-4 text-uppercase fw-bold">Productos</a>
+        </div>
+    </nav>
+
+    <!-- Slider principal -->
+    <!-- Hero Principal con imagen oficial MIPA -->
+    <section class="hero-mipa position-relative d-flex align-items-center"
+        style="min-height: 100vh; background: url('images/heroimage2.jpg') center/cover no-repeat fixed;">
+        <!-- Overlay degradado solo en la izquierda para el texto -->
+        <div class="position-absolute top-0 start-0 bottom-0 w-100 w-lg-50"
+            style="background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));"></div>
+
+        <!-- Contenido alineado a la izquierda -->
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center h-100">
+                <div class="col-lg-6">
+                    <h1 class="display-3 fw-bold mb-4 text-white text-shadow">
+                        <br>SISTEMA COMPLETO DE PINTURA AUTOMOTRIZ
+                    </h1>
+
+                    <p class="lead fs-4 mb-5 text-white text-shadow">
+                        Herramientas profesionales.<br><br>
+                        <strong class="text-danger fs-3">Calidad hecha en Alemania,<br>Servicio
+                            Ambateño.</strong>
+                    </p>
+
+                    <div class="d-flex flex-column flex-sm-row gap-4">
+                        <a href="productos.html" class="btn btn-danger btn-lg px-5 py-4 rounded-pill shadow-lg fs-4">
+                            <i class="fas fa-search me-3"></i> Ver Catálogo Completo
+                        </a>
+                        <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20información%20sobre%20productos%20MIPA"
+                            target="_blank" class="btn btn-success btn-lg px-5 py-4 rounded-pill shadow-lg fs-4"
+                            style="background-color: #25D366; border-color: #25D366;">
+                            <i class="fab fa-whatsapp me-3"></i> Cotizar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Filosofía corta + Imagen con contorno -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <!-- Bloque con contorno y sombra -->
+            <div class="border border-primary rounded-3 shadow-lg p-5 bg-white">
+                <div class="row align-items-center">
+                    <!-- Texto filosofía -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="display-5 fw-bold text-center text-lg-start" style="color: #0055a5;">NUESTRA
+                            FILOSOFÍA</h2>
+                        <p class="lead text-center text-lg-start">
+                            En Insycar conectamos talleres y almacenes con soluciones confiables para el repintado
+                            automotriz.
+                        </p>
+                        <p class="text-center text-lg-start fs-5">
+                            Distribuimos pinturas, tintes, fondos, barnices y productos complementarios de la marca
+                            alemana reconocida MIPA, acompañando a nuestros clientes con <strong>asesoría técnica y
+                                capacitación constante</strong>.
+                        </p>
+                        <p class="text-center text-lg-start fst-italic fw-bold" style="color: #e30613;">
+                            “No solo vendemos productos. Distribuimos confianza.”
+                        </p>
+                        <div class="text-center text-lg-start mt-4">
+                            <a href="sobreNosotors.html" class="btn btn-outline-primary btn-lg">Conoce más sobre
+                                nosotros</a>
+                        </div>
+                    </div>
+
+                    <!-- Imagen con contorno interno -->
+                    <div class="col-lg-6">
+                        <div class="text-center">
+                            <img src="images/Mipa_image.jpeg" alt="MIPA - Calidad alemana"
+                                class="img-fluid rounded shadow"
+                                style="max-height: 500px; object-fit: cover; border: 4px solid #e30613;">
+                            <p class="text-muted small mt-3">MIPA, la marca Alemana con productos de la más alta calidad
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer profesional -->
+    <footer class="bg-dark text-white py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <h5 class="text-uppercase fw-bold text-cyan">Nosotros</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="sobreNosotors.html" class="text-white">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3">
+                    <h5 class="text-uppercase fw-bold text-cyan">Servicios</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Asesoría Técnica</a></li>
+                        <li><a href="#" class="text-white">Productos de alta calidad</a></li>
+                        <li><a href="#" class="text-white">Mezcla de Colores</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-uppercase fw-bold text-cyan">Aviso Legal</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
+                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="bg-light my-4">
+
+            <div class="text-center my-4">
+                <img src="images/InsycarLogo.jpg" alt="Insycar" class="img-fluid" style="max-height: 100px;">
+            </div>
+
+            <div class="text-center mb-4">
+                <a href="https://www.facebook.com/share/19xnrtgcd5/" class="text-white mx-3"><i
+                        class="fab fa-facebook-f fa-2x"></i></a>
+                <!--<a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>-->
+            </div>
+
+            <div class="text-center">
+                <p class="mb-0">Insycar © Todos los derechos reservados © 2025</p>
+                <p class="mb-0">Movemos calidad</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp flotante -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/593987369760" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Insycar"
+                style="width: 60px;">
+        </a>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
