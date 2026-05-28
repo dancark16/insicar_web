@@ -5,231 +5,345 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Conoce a Insycar: nuestra historia, filosofía, propósito, misión, visión y valores. Somos distribuidores de confianza en repintado automotriz.">
+        content="Conoce a Insycar: historia, manifiesto, propósito, misión, visión y valores para el repintado automotriz profesional.">
     <title>Nosotros - Insycar</title>
 
-    <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/InsycarLogo.jpg">
 </head>
 
 <body>
 
-    <!-- Top bar rojo -->
-    <div class="top-bar text-center text-white py-2" style="background-color: #e30613;">
-        <p class="mb-0">Distribuimos calidad automotriz</p>
+    <div class="utility-bar">
+        <div class="container utility-content">
+            <div class="utility-left">
+                <span><i class="fa-solid fa-phone"></i> +593 98 736 9760</span>
+                <span><i class="fa-solid fa-location-dot"></i> Ambato, Ecuador</span>
+                <span><i class="fa-solid fa-clock"></i> Lun-Vie 08:00-18:00 | Sáb 08:00-14:00</span>
+            </div>
+            <div class="utility-right">
+                <a href="https://www.facebook.com/share/19xnrtgcd5/" target="_blank" aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/593987369760" target="_blank" aria-label="WhatsApp"><i
+                        class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
     </div>
 
-    <!-- Header principal -->
-    <header class="bg-dark text-white py-3">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html">
-                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="img-fluid logo-hover"
-                    style="max-height: 100px;">
+    <header class="main-header">
+        <div class="container header-grid">
+            <a href="index.html" class="brand">
+                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="logo-hover">
             </a>
 
-            <div class="search-bar flex-grow-1 mx-5">
+            <div class="search-bar">
                 <form id="searchForm" class="d-flex">
-                    <input type="text" id="searchInput" class="form-control rounded-pill-start" placeholder="Busca barnices, fondos, aerosoles...">
-                    <button type="submit" class="btn btn-danger rounded-pill-end"><i class="fas fa-search"></i></button>
+                    <input type="text" id="searchInput" class="form-control"
+                        placeholder="Busca barnices, fondos, aerosoles, masillas...">
+                    <button type="submit" class="btn btn-danger"><i class="fas fa-search"></i></button>
                 </form>
             </div>
+
+            <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20una%20cotización" target="_blank"
+                class="header-cta">
+                <i class="fab fa-whatsapp"></i> Cotizar Ahora
+            </a>
         </div>
     </header>
 
-    <!-- Menú principal -->
-    <nav class="category-menu text-center py-3" style="background-color: #003366;">
-        <div class="container">
-            <a href="index.html" class="text-white mx-4 text-uppercase fw-bold">Inicio</a>
-            <a href="sobreNosotors.html" class="text-white mx-4 text-uppercase fw-bold">Nosotros</a>
-            <a href="productos.html" class="text-white mx-4 text-uppercase fw-bold">Productos</a>
+    <nav class="main-nav">
+        <div class="container nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="sobreNosotors.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contatanos.html">Contáctanos</a>
         </div>
     </nav>
 
-    <!-- Contenido principal: Nosotros -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h1 class="display-4 fw-bold" style="color: #0055a5;">NOSOTROS</h1>
-                <p class="lead">Conoce quiénes somos y qué nos mueve</p>
-            </div>
-
-            <!-- Historia con imagen -->
-            <div class="bg-white p-5 rounded shadow mb-5">
-                <h2 class="text-center fw-bold mb-4" style="color: #e30613;">Nuestra Historia</h2>
-                <div class="row align-items-center">
-                    <!-- Texto -->
-                    <div class="col-lg-8">
-                        <p class="lead lh-lg">
-                            En octubre de 2016, Insycar inició su trayectoria como uno de los distribuidores de la
-                            prestigiosa marca alemana MIPA, con el objetivo de llevar productos de alta calidad al
-                            sector del repintado automotriz.
-                            Desde entonces, hemos crecido junto a talleres y almacenes principalmente de la ciudad de
-                            Ambato y provincias cercanas, ofreciendo no solo materiales confiables, sino también
-                            asesoría técnica especializada y capacitación constante.
-                            Lo que empezó como una pequeña operación se convirtió en un referente local gracias al
-                            compromiso con la excelencia y la confianza de nuestros clientes.
-                            Hoy, después de años de dedicación y crecimiento constante, seguimos consolidándonos como su
-                            aliado preferido en el sector.
-                            <strong>Tenemos la visión de abarcar más sectores en un futuro, expandiendo nuestra oferta
-                                para seguir moviendo calidad en cada proyecto.</strong>
-                        </p>
-                    </div>
-                    <!-- Imagen -->
-                    <div class="col-lg-4 text-center">
-                        <img src="images/historia.jpeg" alt="Historia de Insycar - Inicio en 2016"
-                            class="img-fluid rounded shadow" style="max-height: 400px;">
-                        <p class="text-muted small mt-2">Equipo Insycar</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Manifiesto destacado -->
-            <div class="bg-white p-5 rounded shadow-lg mb-5">
-                <h2 class="text-center fw-bold mb-4" style="color: #e30613;">Manifiesto Insycar</h2>
-                <p class="lh-lg text-center fs-5 fst-italic">
-                    No solo vendemos pintura automotriz.<br>
-                    <strong>Distribuimos confianza.</strong><br><br>
-                    Porque en este sector, un mal producto no solo mancha una pieza: mancha el trabajo, el tiempo y la
-                    reputación del técnico.<br><br>
-                    Por eso, en Insycar elegimos marcas que responden, que cumplen, que no fallan.<br>
-                    Acompañamos cada entrega con conocimiento técnico, capacitación real y asesoría
-                    personalizada.<br><br>
-                    Nos importa la calidad, pero también <em>cómo</em> la llevamos: con respeto, con agilidad, con
-                    compromiso.<br><br>
-                    Nuestro trabajo es silencioso, pero se nota en cada acabado perfecto.<br>
-                    <strong>Somos aliados de los que pintan con pasión.</strong>
-                </p>
-            </div>
-
-            <!-- Propósito, Misión y Visión -->
-            <div class="row g-5 mb-5">
-                <div class="col-md-4">
-                    <div class="text-center p-4 bg-white rounded shadow">
-                        <i class="fas fa-bullseye fa-3x mb-3" style="color: #e30613;"></i>
-                        <h3 class="fw-bold">Propósito</h3>
-                        <p>Conectar a los profesionales de la pintura automotriz con soluciones confiables y de alta
-                            calidad que impulsen su trabajo y protejan su reputación.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center p-4 bg-white rounded shadow">
-                        <i class="fas fa-compass fa-3x mb-3" style="color: #0055a5;"></i>
-                        <h3 class="fw-bold">Misión</h3>
-                        <p>Somos una empresa especializada en la distribución de pintura automotriz, abrasivos y
-                            productos complementarios, que brinda asesoría técnica y capacitación continua para
-                            garantizar una aplicación correcta y resultados duraderos. Nuestro compromiso es ofrecer un
-                            servicio ágil, respetuoso y experto a talleres y almacenes del sector automotriz.</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="text-center p-4 bg-white rounded shadow">
-                        <i class="fas fa-eye fa-3x mb-3" style="color: #e30613;"></i>
-                        <h3 class="fw-bold">Visión</h3>
-                        <p>En 10 años, seremos una comercializadora referente a nivel nacional en productos de repintado
-                            automotriz, reconocida por la calidad de nuestras marcas, el profesionalismo de nuestro
-                            servicio y la confianza que generamos en cada entrega.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Valores con íconos -->
-            <h2 class="text-center fw-bold mb-5" style="color: #0055a5;">Nuestros Valores</h2>
-            <div class="row text-center g-4">
-                <div class="col-md">
-                    <i class="fas fa-award fa-4x mb-3" style="color: #e30613;"></i>
-                    <h4>Calidad garantizada</h4>
-                    <p>Comercializamos solo productos confiables y de marcas reconocidas.</p>
-                </div>
-                <div class="col-md">
-                    <i class="fas fa-chalkboard-teacher fa-4x mb-3" style="color: #0055a5;"></i>
-                    <h4>Servicio con conocimiento</h4>
-                    <p>Cada asesoría parte del dominio técnico y del respeto al cliente.</p>
-                </div>
-                <div class="col-md">
-                    <i class="fas fa-truck-fast fa-4x mb-3" style="color: #e30613;"></i>
-                    <h4>Agilidad y cumplimiento</h4>
-                    <p>Entregamos a tiempo y sin excusas.</p>
-                </div>
-                <div class="col-md">
-                    <i class="fas fa-handshake fa-4x mb-3" style="color: #0055a5;"></i>
-                    <h4>Compromiso con la confianza</h4>
-                    <p>La fidelidad de nuestros clientes es nuestro mayor activo.</p>
-                </div>
-                <div class="col-md">
-                    <i class="fas fa-users-gear fa-4x mb-3" style="color: #e30613;"></i>
-                    <h4>Crecimiento compartido</h4>
-                    <p>Apostamos por relaciones duraderas, donde todos ganamos.</p>
-                </div>
+    <section class="about-hero about-hero-v2">
+        <div class="container about-hero-content reveal">
+            <p class="mini">Quiénes somos</p>
+            <h1>Somos el aliado técnico de talleres y almacenes de repintado automotriz</h1>
+            <p>
+                En Insycar unimos productos de alto desempeño, soporte técnico real y atención cercana para que cada
+                acabado refleje calidad profesional.
+            </p>
+            <div class="about-hero-actions">
+                <a href="productos.html" class="btn btn-danger btn-lg">Ver productos</a>
+                <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20asesoría%20técnica" target="_blank"
+                    class="btn btn-outline-light btn-lg">
+                    Asesoría técnica
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-5">
+    <section class="section-pad">
         <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h5 class="text-uppercase fw-bold text-cyan">Nosotros</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="sobreNosotors.html" class="text-white">Sobre nosotros</a></li>
-                    </ul>
+            <div class="about-story-card reveal">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <p class="mini">Trayectoria</p>
+                        <h2>Nuestra Historia</h2>
+                        <p>
+                            En octubre de 2016, Insycar inició su trayectoria como distribuidor de la prestigiosa marca
+                            alemana MIPA,
+                            con el objetivo de llevar productos de alta calidad al sector del repintado automotriz.
+                        </p>
+                        <p>
+                            Desde entonces, hemos crecido junto a talleres y almacenes de Ambato y provincias cercanas,
+                            ofreciendo materiales confiables, asesoría técnica especializada y capacitación constante.
+                        </p>
+                        <p class="mb-0">
+                            Lo que comenzó como una operación pequeña hoy es una empresa de referencia local,
+                            comprometida con resultados, confianza y crecimiento compartido.
+                        </p>
+                    </div>
+                    <div class="col-lg-5 text-center">
+                        <img src="images/historia.jpeg" alt="Equipo Insycar" class="img-fluid about-story-img">
+                        <p class="text-muted small mt-2 mb-0">Equipo Insycar</p>
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fw-bold text-cyan">Servicios</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Asesoría Técnica</a></li>
-                        <li><a href="#" class="text-white">Productos de alta calidad</a></li>
-                        <li><a href="#" class="text-white">Mezcla de Colores</a></li>
-                    </ul>
+            </div>
+
+            <div class="about-manifesto reveal">
+                <p class="mini">Manifiesto</p>
+                <h2>Distribuimos confianza</h2>
+                <p>
+                    No solo vendemos pintura automotriz. Elegimos marcas que responden, acompañamos cada entrega
+                    con conocimiento técnico y asesoría personalizada, y trabajamos con respeto, agilidad y compromiso.
+                </p>
+                <p class="mb-0 strong-line">
+                    Nuestro trabajo es silencioso, pero se nota en cada acabado perfecto.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad soft-bg">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Dirección estratégica</p>
+                <h2>Propósito, Misión y Visión</h2>
+            </div>
+
+            <div class="pmv-grid">
+                <article class="pmv-card reveal">
+                    <i class="fas fa-bullseye"></i>
+                    <h3>Propósito</h3>
+                    <p>
+                        Conectar a los profesionales de la pintura automotriz con soluciones confiables y de alta
+                        calidad
+                        que impulsen su trabajo y protejan su reputación.
+                    </p>
+                </article>
+
+                <article class="pmv-card reveal">
+                    <i class="fas fa-compass"></i>
+                    <h3>Misión</h3>
+                    <p>
+                        Distribuir pintura automotriz, abrasivos y complementarios con asesoría técnica y capacitación
+                        continua,
+                        garantizando aplicación correcta y resultados duraderos.
+                    </p>
+                </article>
+
+                <article class="pmv-card reveal">
+                    <i class="fas fa-eye"></i>
+                    <h3>Visión</h3>
+                    <p>
+                        Ser una comercializadora referente a nivel nacional en repintado automotriz, reconocida por la
+                        calidad
+                        de sus marcas, profesionalismo y confianza en cada entrega.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Cultura</p>
+                <h2>Nuestros Valores</h2>
+            </div>
+
+            <div class="about-values-grid">
+                <article class="about-value reveal">
+                    <i class="fas fa-award"></i>
+                    <h4>Calidad garantizada</h4>
+                    <p>Comercializamos solo productos confiables y de marcas reconocidas.</p>
+                </article>
+                <article class="about-value reveal">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h4>Servicio con conocimiento</h4>
+                    <p>Cada asesoría parte del dominio técnico y del respeto al cliente.</p>
+                </article>
+                <article class="about-value reveal">
+                    <i class="fas fa-truck-fast"></i>
+                    <h4>Agilidad y cumplimiento</h4>
+                    <p>Entregamos a tiempo y sin excusas.</p>
+                </article>
+                <article class="about-value reveal">
+                    <i class="fas fa-handshake"></i>
+                    <h4>Compromiso con la confianza</h4>
+                    <p>La fidelidad de nuestros clientes es nuestro mayor activo.</p>
+                </article>
+                <article class="about-value reveal">
+                    <i class="fas fa-users-gear"></i>
+                    <h4>Crecimiento compartido</h4>
+                    <p>Apostamos por relaciones duraderas, donde todos ganamos.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-kpis section-pad reveal">
+        <div class="container">
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <h3><span class="counter" data-target="10">0</span>+</h3>
+                    <p>Años de trayectoria</p>
+                </article>
+                <article class="kpi-card">
+                    <h3><span class="counter" data-target="500">0</span>+</h3>
+                    <p>Clientes atendidos</p>
+                </article>
+                <article class="kpi-card">
+                    <h3><span class="counter" data-target="2000">0</span>+</h3>
+                    <p>Entregas realizadas</p>
+                </article>
+                <article class="kpi-card">
+                    <h3><span class="counter" data-target="24">0</span>/48h</h3>
+                    <p>Tiempo de respuesta</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad soft-bg">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Evolución</p>
+                <h2>Línea de tiempo Insycar</h2>
+            </div>
+
+            <div class="about-timeline">
+                <article class="timeline-item reveal">
+                    <span class="timeline-year">2016</span>
+                    <h4>Inicio de operaciones</h4>
+                    <p>Arrancamos como distribuidor enfocado en repintado automotriz en Ambato.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <span class="timeline-year">2019</span>
+                    <h4>Consolidación local</h4>
+                    <p>Ampliamos cartera de talleres y almacenes con asesoría técnica personalizada.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <span class="timeline-year">2022</span>
+                    <h4>Capacitación continua</h4>
+                    <p>Fortalecimos acompañamiento técnico y formación práctica para clientes.</p>
+                </article>
+                <article class="timeline-item reveal">
+                    <span class="timeline-year">Hoy</span>
+                    <h4>Expansión estratégica</h4>
+                    <p>Escalamos soluciones y cobertura para seguir moviendo calidad en cada proyecto.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Galería</p>
+                <h2>Nuestro equipo y entorno de trabajo</h2>
+            </div>
+
+            <div id="aboutGallery" class="carousel slide gallery-carousel reveal" data-bs-ride="carousel">
+                <div class="carousel-inner rounded-4 overflow-hidden">
+                    <div class="carousel-item active">
+                        <img src="images/historia.jpeg" class="d-block w-100 gallery-img" alt="Equipo Insycar">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Mipa_image.jpeg" class="d-block w-100 gallery-img" alt="Portafolio de productos">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/interface.png" class="d-block w-100 gallery-img" alt="Área técnica y proceso">
+                    </div>
                 </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fw-bold text-cyan">Aviso Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
-                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#aboutGallery" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#aboutGallery" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
             </div>
+        </div>
+    </section>
 
-            <hr class="bg-light my-4">
-
-            <div class="text-center my-4">
-                <img src="images/InsycarLogo.jpg" alt="Insycar" class="img-fluid" style="max-height: 100px;">
+    <section class="cta-band reveal">
+        <div class="container cta-band-content">
+            <div>
+                <h2>¿Quieres trabajar con un proveedor que sí te acompaña técnicamente?</h2>
+                <p>Conversemos y armamos la mejor solución para tu taller o almacén.</p>
             </div>
+            <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20información%20sobre%20sus%20soluciones"
+                target="_blank" class="btn btn-light btn-lg">
+                Hablar por WhatsApp
+            </a>
+        </div>
+    </section>
 
-            <div class="text-center mb-4">
-                <a href="https://www.facebook.com/share/19xnrtgcd5/" class="text-white mx-3"><i
-                        class="fab fa-facebook-f fa-2x"></i></a>
-                <!--<a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>-->
+    <footer class="footer-pro">
+        <div class="container footer-grid">
+            <div>
+                <img src="images/InsycarLogo.jpg" alt="Insycar" class="footer-logo">
+                <p>Distribuimos confianza para el repintado automotriz profesional.</p>
             </div>
-
-            <div class="text-center">
-                <p class="mb-0">Insycar © Todos los derechos reservados © 2025</p>
-                <p class="mb-0">Movemos calidad</p>
+            <div>
+                <h5>Empresa</h5>
+                <ul>
+                    <li><a href="sobreNosotors.html">Sobre nosotros</a></li>
+                    <li><a href="contatanos.html">Contacto</a></li>
+                </ul>
             </div>
+            <div>
+                <h5>Soluciones</h5>
+                <ul>
+                    <li><a href="productos.html">Barnices</a></li>
+                    <li><a href="productos.html">Fondos</a></li>
+                    <li><a href="productos.html">Masillas</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Contacto</h5>
+                <ul>
+                    <li><a href="tel:+593987369760">+593 98 736 9760</a></li>
+                    <li><a href="https://wa.me/593987369760" target="_blank">WhatsApp</a></li>
+                    <li>Ambato, Ecuador</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Insycar © 2026 | Movemos calidad
         </div>
     </footer>
 
-    <!-- WhatsApp flotante -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/593987369760" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Insycar"
-                style="width: 60px;">
+        <a href="https://wa.me/593987369760" target="_blank" aria-label="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Insycar">
         </a>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="js/scripts.js"></script>
 </body>
 

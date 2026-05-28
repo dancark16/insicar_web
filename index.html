@@ -12,10 +12,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts -->
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">F
     <!-- Estilos personalizados -->
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/InsycarLogo.jpg">
@@ -23,181 +22,288 @@
 
 <body>
 
-    <!-- Top bar rojo -->
-    <div class="top-bar text-center text-white py-2" style="background-color: #e30613;">
-        <p class="mb-0">Distribuimos calidad automotriz</p>
+    <div class="utility-bar">
+        <div class="container utility-content">
+            <div class="utility-left">
+                <span><i class="fa-solid fa-phone"></i> +593 98 736 9760</span>
+                <span><i class="fa-solid fa-location-dot"></i> Ambato, Ecuador</span>
+                <span><i class="fa-solid fa-clock"></i> Lun-Vie 08:00-18:00 | Sáb 08:00-14:00</span>
+            </div>
+            <div class="utility-right">
+                <a href="https://www.facebook.com/share/19xnrtgcd5/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/593987369760" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <!-- Header principal -->
-    <header class="bg-dark text-white py-3">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html">
-                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="img-fluid logo-hover"
-                    style="max-height: 100px;">
+    <header class="main-header">
+        <div class="container header-grid">
+            <a href="index.html" class="brand">
+                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="logo-hover">
             </a>
 
-            <div class="search-bar flex-grow-1 mx-5">
+            <div class="search-bar">
                 <form id="searchForm" class="d-flex">
-                    <input type="text" id="searchInput" class="form-control rounded-pill-start"
-                        placeholder="Busca barnices, fondos, aerosoles...">
-                    <button type="submit" class="btn btn-danger rounded-pill-end"><i class="fas fa-search"></i></button>
+                    <input type="text" id="searchInput" class="form-control"
+                        placeholder="Busca barnices, fondos, aerosoles, masillas...">
+                    <button type="submit" class="btn btn-danger"><i class="fas fa-search"></i></button>
                 </form>
             </div>
 
-            <!--<div| class="user-icons d-flex align-items-center">
-                <a href="#" class="text-white mx-3"><i class="fas fa-user fa-lg"></i></a>
-                <a href="#" class="text-white mx-3"><i class="fas fa-shopping-cart fa-lg"></i></a>
-            </div> -->
+            <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20una%20cotización" target="_blank"
+                class="header-cta">
+                <i class="fab fa-whatsapp"></i> Cotizar Ahora
+            </a>
         </div>
     </header>
 
-    <!-- Menú principal simplificado -->
-    <nav class="category-menu text-center py-3" style="background-color: #003366;">
-        <div class="container">
-            <a href="index.html" class="text-white mx-4 text-uppercase fw-bold">Inicio</a>
-            <a href="sobreNosotors.html" class="text-white mx-4 text-uppercase fw-bold">Nosotros</a>
-            <a href="productos.html" class="text-white mx-4 text-uppercase fw-bold">Productos</a>
+    <nav class="main-nav">
+        <div class="container nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="sobreNosotors.html">Nosotros</a>
+            <a href="productos.html">Productos</a>
+            <a href="contatanos.html">Contáctanos</a>
         </div>
     </nav>
 
-    <!-- Slider principal -->
-    <!-- Hero Principal con imagen oficial MIPA -->
-    <section class="hero-mipa position-relative d-flex align-items-center"
-        style="min-height: 100vh; background: url('images/heroimage2.jpg') center/cover no-repeat fixed;">
-        <!-- Overlay degradado solo en la izquierda para el texto -->
-        <div class="position-absolute top-0 start-0 bottom-0 w-100 w-lg-50"
-            style="background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0));"></div>
+    <section class="hero-pro">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-left reveal">
+                <p class="hero-kicker">Distribuidor especializado en repintado automotriz</p>
+                <h1>Sistema profesional de pintura automotriz para talleres que exigen resultados</h1>
+                <p class="hero-sub">
+                    Productos MIPA, asesoría técnica y entrega confiable para potenciar productividad,
+                    acabado y rentabilidad en cada trabajo.
+                </p>
 
-        <!-- Contenido alineado a la izquierda -->
-        <div class="container position-relative" style="z-index: 2;">
-            <div class="row align-items-center h-100">
-                <div class="col-lg-6">
-                    <h1 class="display-3 fw-bold mb-4 text-white text-shadow">
-                        <br>SISTEMA COMPLETO DE PINTURA AUTOMOTRIZ
-                    </h1>
+                <div class="hero-actions">
+                    <a href="productos.html" class="btn btn-danger btn-lg">Ver Productos</a>
+                    <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20asesoría%20técnica"
+                        target="_blank" class="btn btn-outline-light btn-lg">Asesoría Técnica</a>
+                </div>
 
-                    <p class="lead fs-4 mb-5 text-white text-shadow">
-                        Herramientas profesionales.<br><br>
-                        <strong class="text-danger fs-3">Calidad hecha en Alemania,<br>Servicio
-                            Ambateño.</strong>
-                    </p>
+                <div class="hero-metrics">
+                    <div><strong>+10</strong><span>Años en el mercado</span></div>
+                    <div><strong>+500</strong><span>Clientes atendidos</span></div>
+                    <div><strong>24/48h</strong><span>Tiempo de respuesta</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <div class="d-flex flex-column flex-sm-row gap-4">
-                        <a href="productos.html" class="btn btn-danger btn-lg px-5 py-4 rounded-pill shadow-lg fs-4">
-                            <i class="fas fa-search me-3"></i> Ver Catálogo Completo
-                        </a>
-                        <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20información%20sobre%20productos%20MIPA"
-                            target="_blank" class="btn btn-success btn-lg px-5 py-4 rounded-pill shadow-lg fs-4"
-                            style="background-color: #25D366; border-color: #25D366;">
-                            <i class="fab fa-whatsapp me-3"></i> Cotizar por WhatsApp
-                        </a>
+    <section class="trust-strip reveal">
+        <div class="container trust-grid">
+            <div><i class="fa-solid fa-certificate"></i> Calidad respaldada por marca alemana</div>
+            <div><i class="fa-solid fa-truck-fast"></i> Entrega ágil y seguimiento personalizado</div>
+            <div><i class="fa-solid fa-screwdriver-wrench"></i> Soporte técnico para aplicación correcta</div>
+        </div>
+    </section>
+
+    <section class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Portafolio</p>
+                <h2>Categorías principales</h2>
+                <p>Todo lo que un taller necesita para un proceso completo de repintado.</p>
+            </div>
+
+            <div class="category-cards">
+                <a href="productos.html" class="cat-card reveal">
+                    <img src="images/c50.png" alt="Barnices">
+                    <h3>Barnices</h3>
+                    <p>Brillo, protección UV y alto desempeño.</p>
+                </a>
+                <a href="productos.html" class="cat-card reveal">
+                    <img src="images/fondoEL.png" alt="Fondos">
+                    <h3>Fondos</h3>
+                    <p>Base uniforme para acabados de precisión.</p>
+                </a>
+                <a href="productos.html" class="cat-card reveal">
+                    <img src="images/P111.png" alt="Masillas">
+                    <h3>Masillas</h3>
+                    <p>Corrección y nivelación para mejor terminado.</p>
+                </a>
+                <a href="productos.html" class="cat-card reveal">
+                    <img src="images/rapidfillerSpray.png" alt="Aerosoles">
+                    <h3>Aerosoles</h3>
+                    <p>Aplicación práctica en procesos rápidos.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad soft-bg">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Valor</p>
+                <h2>Por qué elegir Insycar</h2>
+            </div>
+
+            <div class="value-grid">
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-flask-vial"></i>
+                    <h3>Asesoría técnica real</h3>
+                    <p>Te ayudamos a elegir producto, mezcla y proceso según cada trabajo.</p>
+                </article>
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>Solución integral</h3>
+                    <p>Desde preparación hasta acabado final en un solo proveedor.</p>
+                </article>
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-handshake-angle"></i>
+                    <h3>Relación a largo plazo</h3>
+                    <p>Nos enfocamos en resultados sostenibles para tu taller o negocio.</p>
+                </article>
+                <article class="value-card reveal">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <h3>Confianza y respaldo</h3>
+                    <p>Marcas reconocidas, stock confiable y atención cercana.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad">
+        <div class="container">
+            <div class="section-head reveal">
+                <p class="mini">Clientes</p>
+                <h2>Lo que dicen de nosotros</h2>
+            </div>
+
+            <div class="testimonials-grid">
+                <article class="testimonial reveal">
+                    <p>Excelente asesoría, mejoramos el acabado final y redujimos reprocesos.</p>
+                    <h4>Taller Rápido Color</h4>
+                    <span>Ambato</span>
+                </article>
+                <article class="testimonial reveal">
+                    <p>La atención es inmediata y siempre nos recomiendan el producto correcto.</p>
+                    <h4>AutoPinturas Centro</h4>
+                    <span>Latacunga</span>
+                </article>
+                <article class="testimonial reveal">
+                    <p>Gran servicio y productos de alto nivel. Cliente fijo desde hace años.</p>
+                    <h4>Max Car Paint</h4>
+                    <span>Riobamba</span>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-pad soft-bg">
+        <div class="container">
+            <div class="section-head reveal">
+                <h2>Preguntas frecuentes</h2>
+            </div>
+
+            <div class="accordion pro-accordion" id="faqInsycar">
+                <div class="accordion-item reveal">
+                    <h2 class="accordion-header" id="faqOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqOneBody" aria-expanded="true" aria-controls="faqOneBody">
+                            ¿Ofrecen asesoría para elegir productos?
+                        </button>
+                    </h2>
+                    <div id="faqOneBody" class="accordion-collapse collapse show" aria-labelledby="faqOne"
+                        data-bs-parent="#faqInsycar">
+                        <div class="accordion-body">
+                            Sí. Analizamos el tipo de trabajo y te recomendamos sistema, mezcla y aplicación.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item reveal">
+                    <h2 class="accordion-header" id="faqTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqTwoBody" aria-expanded="false" aria-controls="faqTwoBody">
+                            ¿Trabajan con talleres y almacenes?
+                        </button>
+                    </h2>
+                    <div id="faqTwoBody" class="accordion-collapse collapse" aria-labelledby="faqTwo"
+                        data-bs-parent="#faqInsycar">
+                        <div class="accordion-body">
+                            Sí, atendemos clientes profesionales y distribuidores con atención personalizada.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item reveal">
+                    <h2 class="accordion-header" id="faqThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqThreeBody" aria-expanded="false" aria-controls="faqThreeBody">
+                            ¿Puedo cotizar por WhatsApp?
+                        </button>
+                    </h2>
+                    <div id="faqThreeBody" class="accordion-collapse collapse" aria-labelledby="faqThree"
+                        data-bs-parent="#faqInsycar">
+                        <div class="accordion-body">
+                            Claro. Escríbenos y te respondemos con opciones y tiempos de entrega.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección Filosofía corta + Imagen con contorno -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <!-- Bloque con contorno y sombra -->
-            <div class="border border-primary rounded-3 shadow-lg p-5 bg-white">
-                <div class="row align-items-center">
-                    <!-- Texto filosofía -->
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <h2 class="display-5 fw-bold text-center text-lg-start" style="color: #0055a5;">NUESTRA
-                            FILOSOFÍA</h2>
-                        <p class="lead text-center text-lg-start">
-                            En Insycar conectamos talleres y almacenes con soluciones confiables para el repintado
-                            automotriz.
-                        </p>
-                        <p class="text-center text-lg-start fs-5">
-                            Distribuimos pinturas, tintes, fondos, barnices y productos complementarios de la marca
-                            alemana reconocida MIPA, acompañando a nuestros clientes con <strong>asesoría técnica y
-                                capacitación constante</strong>.
-                        </p>
-                        <p class="text-center text-lg-start fst-italic fw-bold" style="color: #e30613;">
-                            “No solo vendemos productos. Distribuimos confianza.”
-                        </p>
-                        <div class="text-center text-lg-start mt-4">
-                            <a href="sobreNosotors.html" class="btn btn-outline-primary btn-lg">Conoce más sobre
-                                nosotros</a>
-                        </div>
-                    </div>
-
-                    <!-- Imagen con contorno interno -->
-                    <div class="col-lg-6">
-                        <div class="text-center">
-                            <img src="images/Mipa_image.jpeg" alt="MIPA - Calidad alemana"
-                                class="img-fluid rounded shadow"
-                                style="max-height: 500px; object-fit: cover; border: 4px solid #e30613;">
-                            <p class="text-muted small mt-3">MIPA, la marca Alemana con productos de la más alta calidad
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <section class="cta-band reveal">
+        <div class="container cta-band-content">
+            <div>
+                <h2>¿Listo para elevar la calidad de tus acabados?</h2>
+                <p>Hablemos de tu proceso y te ayudamos a elegir la mejor solución.</p>
             </div>
+            <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20una%20cotización" target="_blank"
+                class="btn btn-light btn-lg">Hablar por WhatsApp</a>
         </div>
     </section>
 
-    <!-- Footer profesional -->
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h5 class="text-uppercase fw-bold text-cyan">Nosotros</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="sobreNosotors.html" class="text-white">Sobre nosotros</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fw-bold text-cyan">Servicios</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Asesoría Técnica</a></li>
-                        <li><a href="#" class="text-white">Productos de alta calidad</a></li>
-                        <li><a href="#" class="text-white">Mezcla de Colores</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fw-bold text-cyan">Aviso Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
-                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
+    <footer class="footer-pro">
+        <div class="container footer-grid">
+            <div>
+                <img src="images/InsycarLogo.jpg" alt="Insycar" class="footer-logo">
+                <p>Distribuimos confianza para el repintado automotriz profesional.</p>
             </div>
-
-            <hr class="bg-light my-4">
-
-            <div class="text-center my-4">
-                <img src="images/InsycarLogo.jpg" alt="Insycar" class="img-fluid" style="max-height: 100px;">
+            <div>
+                <h5>Empresa</h5>
+                <ul>
+                    <li><a href="sobreNosotors.html">Sobre nosotros</a></li>
+                    <li><a href="contatanos.html">Contacto</a></li>
+                </ul>
             </div>
-
-            <div class="text-center mb-4">
-                <a href="https://www.facebook.com/share/19xnrtgcd5/" class="text-white mx-3"><i
-                        class="fab fa-facebook-f fa-2x"></i></a>
-                <!--<a href="#" class="text-white mx-3"><i class="fab fa-instagram fa-2x"></i></a>-->
+            <div>
+                <h5>Soluciones</h5>
+                <ul>
+                    <li><a href="productos.html">Barnices</a></li>
+                    <li><a href="productos.html">Fondos</a></li>
+                    <li><a href="productos.html">Masillas</a></li>
+                </ul>
             </div>
-
-            <div class="text-center">
-                <p class="mb-0">Insycar © Todos los derechos reservados © 2025</p>
-                <p class="mb-0">Movemos calidad</p>
+            <div>
+                <h5>Contacto</h5>
+                <ul>
+                    <li><a href="tel:+593987369760">+593 98 736 9760</a></li>
+                    <li><a href="https://wa.me/593987369760" target="_blank">WhatsApp</a></li>
+                    <li>Ambato, Ecuador</li>
+                </ul>
             </div>
+        </div>
+        <div class="footer-bottom">
+            Insycar © 2026 | Movemos calidad
         </div>
     </footer>
 
-    <!-- WhatsApp flotante -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/593987369760" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Insycar"
-                style="width: 60px;">
+        <a href="https://wa.me/593987369760" target="_blank" aria-label="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Insycar">
         </a>
     </div>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/scripts.js"></script>
 </body>
 
