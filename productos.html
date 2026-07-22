@@ -4,564 +4,621 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catálogo completo de productos MIPA distribuidos por Insycar.">
+    <meta name="description" content="Catálogo completo de productos MIPA: barnices, fondos, masillas, catalizadores, diluyentes y herramientas. Distribuidos por Insycar en Ambato, Ecuador.">
     <title>Productos - Insycar</title>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="images/InsycarLogo.jpg">
 </head>
 
 <body>
 
-    <!-- Top bar rojo -->   
-    <div class="top-bar text-center text-white py-2" style="background-color: #e30613;">
-        <p class="mb-0">Distribuimos calidad automotriz</p>
+    <div class="utility-bar">
+        <div class="container utility-content">
+            <div class="utility-left">
+                <span><i class="fa-solid fa-phone"></i> +593 98 736 9760</span>
+                <span><i class="fa-solid fa-location-dot"></i> Ambato, Ecuador</span>
+                <span><i class="fa-solid fa-clock"></i> Lun-Vie 08:00-18:00 | Sáb 08:00-14:00</span>
+            </div>
+            <div class="utility-right">
+                <a href="https://www.facebook.com/share/19xnrtgcd5/" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://wa.me/593987369760" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
     </div>
 
-    <!-- Header principal -->
-    <header class="bg-dark text-white py-3">
-        <div class="container d-flex align-items-center justify-content-between">
-            <a href="index.html">
-                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="img-fluid logo-hover"
-                    style="max-height: 100px;">
+    <header class="main-header">
+        <div class="container header-grid">
+            <a href="index.html" class="brand">
+                <img src="images/InsycarLogo.jpg" alt="Insycar - Movemos calidad" class="logo-hover">
             </a>
-
-            <div class="search-bar flex-grow-1 mx-5">
+            <div class="search-bar">
                 <form id="searchForm" class="d-flex">
-                    <input type="text" id="searchInput" class="form-control rounded-pill-start"
-                        placeholder="Busca barnices, fondos, aerosoles...">
-                    <button type="submit" class="btn btn-danger rounded-pill-end"><i class="fas fa-search"></i></button>
+                    <input type="text" id="searchInput" class="form-control" placeholder="Busca barnices, fondos, aerosoles, masillas...">
+                    <button type="submit" class="btn btn-danger"><i class="fas fa-search"></i></button>
                 </form>
             </div>
+            <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20quiero%20una%20cotización" target="_blank" class="header-cta">
+                <i class="fab fa-whatsapp"></i> Cotizar Ahora
+            </a>
         </div>
     </header>
 
-    <!-- Menú principal -->
-    <nav class="category-menu text-center py-3" style="background-color: #003366;">
-        <div class="container">
-            <a href="index.html" class="text-white mx-4 text-uppercase fw-bold">Inicio</a>
-            <a href="sobreNosotors.html" class="text-white mx-4 text-uppercase fw-bold">Nosotros</a>
-            <a href="productos.html" class="text-white mx-4 text-uppercase fw-bold">Productos</a>
+    <nav class="main-nav">
+        <div class="container nav-wrapper">
+            <button class="nav-toggler" id="navToggler" aria-label="Abrir menú">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-links" id="navMenu">
+                <a href="index.html">Inicio</a>
+                <a href="sobreNosotors.html">Nosotros</a>
+                <a href="productos.html">Productos</a>
+                <a href="contatanos.html">Contáctanos</a>
+            </div>
         </div>
     </nav>
 
-    <!-- Productos -->
-    <!-- Productos -->
-    <section class="py-5 bg-light">
+    <!-- Hero productos -->
+    <section class="products-hero">
         <div class="container">
-            <div class="text-center mb-5">
-                <h1 class="display-4 fw-bold" style="color: #0055a5;">CATÁLOGO DE PRODUCTOS MIPA</h1>
-            </div>
+            <p class="mini" style="color:#8fefff; margin-bottom:8px;">Portafolio completo</p>
+            <h1>Catálogo de Productos MIPA</h1>
+            <p>Sistema completo de repintado automotriz: desde preparación hasta acabado final.</p>
+        </div>
+    </section>
+
+    <!-- Filtros de categoría -->
+    <div class="container">
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="masillas">Masillas</button>
+            <button class="filter-btn" data-filter="fondos">Fondos</button>
+            <button class="filter-btn" data-filter="barnices">Barnices</button>
+            <button class="filter-btn" data-filter="express">Línea Express</button>
+            <button class="filter-btn" data-filter="catalizadores">Catalizadores</button>
+            <button class="filter-btn" data-filter="diluyentes">Diluyentes</button>
+            <button class="filter-btn" data-filter="pintura">Sistema Pintura</button>
+            <button class="filter-btn" data-filter="aerosoles">Aerosoles</button>
+            <button class="filter-btn" data-filter="proteccion">Protección</button>
+            <button class="filter-btn" data-filter="herramientas">Herramientas</button>
+        </div>
+    </div>
+
+    <section class="section-pad" style="padding-top: 20px;">
+        <div class="container" id="productContainer">
 
             <!-- 1. Masillas de relleno -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Masillas de relleno</h2>
+            <div class="category-section" data-category="masillas">
+                <h2 class="category-section-title">Masillas de relleno</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/P99.png" alt="P99 Multi-starl" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="p99 multi-starl">
+                        <div class="product-card">
+                            <img src="images/P99.png" alt="P99 Multi-starl" loading="lazy">
                             <h5>P99 Multi-starl</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20P99%20Multi-starl" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/P111.png" alt="P111 Gold" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="p111 gold">
+                        <div class="product-card">
+                            <img src="images/P111.png" alt="P111 Gold" loading="lazy">
                             <h5>P111 Gold</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20P111%20Gold" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 2. Masillas especializadas -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Masillas especializadas</h2>
+            <div class="category-section" data-category="masillas">
+                <h2 class="category-section-title">Masillas especializadas</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/P35.png" alt="P35 Elástica" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="p35 elástica">
+                        <div class="product-card">
+                            <img src="images/P35.png" alt="P35 Elástica" loading="lazy">
                             <h5>P35 Elástica</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20P35%20El%C3%A1stica" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/P51.png" alt="P51 Fibra" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="p51 fibra de vidrio">
+                        <div class="product-card">
+                            <img src="images/P51.png" alt="P51 Fibra de vidrio" loading="lazy">
                             <h5>P51 Fibra de vidrio</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20P51%20Fibra%20de%20vidrio" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/P70.png" alt="P70 Metálica" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="p70 metálica">
+                        <div class="product-card">
+                            <img src="images/P70.png" alt="P70 Metálica" loading="lazy">
                             <h5>P70 Metálica</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20P70%20Met%C3%A1lica" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/N30.png" alt="N30 Combi" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="n30 combi">
+                        <div class="product-card">
+                            <img src="images/N30.png" alt="N30 Combi" loading="lazy">
                             <h5>N30 Combi</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20N30%20Combi" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 3. Anticorrosivos / Wash-primer -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Anticorrosivos / Wash-primer</h2>
+            <div class="category-section" data-category="fondos">
+                <h2 class="category-section-title">Anticorrosivos / Wash-primer</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/RAPIDFILLER.png" alt="Rapidfiller" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="rapidfiller">
+                        <div class="product-card">
+                            <img src="images/RAPIDFILLER.png" alt="Rapidfiller" loading="lazy">
                             <h5>Rapidfiller</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Rapidfiller" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/akctiveprimer.png" alt="Aktiv-primer" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="aktiv-primer aktive primer">
+                        <div class="product-card">
+                            <img src="images/akctiveprimer.png" alt="Aktiv-primer" loading="lazy">
                             <h5>Aktiv-primer</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Aktiv-primer" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/epoxyprimer.png" alt="1K Epoxy-primer" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="1k epoxy primer">
+                        <div class="product-card">
+                            <img src="images/epoxyprimer.png" alt="1K Epoxy-primer" loading="lazy">
                             <h5>1K Epoxy-primer</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%201K%20Epoxy-primer" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 4. Fondos de Relleno -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Fondos de Relleno</h2>
+            <div class="category-section" data-category="fondos">
+                <h2 class="category-section-title">Fondos de Relleno</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/fondoEL.png" alt="HS-Acrylfiller EL" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="hs-acrylfiller el fondo el">
+                        <div class="product-card">
+                            <img src="images/fondoEL.png" alt="HS-Acrylfiller EL" loading="lazy">
                             <h5>HS-Acrylfiller EL</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20HS-Acrylfiller%20EL" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/F54.png" alt="HS-F54 Grundfiller" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="hs-f54 grundfiller f54">
+                        <div class="product-card">
+                            <img src="images/F54.png" alt="HS-F54 Grundfiller" loading="lazy">
                             <h5>HS-F54 Grundfiller</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20HS-F54%20Grundfiller" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/f37.png" alt="HS-F37 Húmedo" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="hs-f37 húmedo f37">
+                        <div class="product-card">
+                            <img src="images/f37.png" alt="HS-F37 Húmedo" loading="lazy">
                             <h5>HS-F37 Húmedo</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20HS-F37%20H%C3%BAmedo" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 5. Promotores de adherencia -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Promotores de adherencia</h2>
+            <div class="category-section" data-category="fondos">
+                <h2 class="category-section-title">Promotores de adherencia</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/hafpromoter.png" alt="Haftpromoter" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="haftpromoter promotor adherencia">
+                        <div class="product-card">
+                            <img src="images/hafpromoter.png" alt="Haftpromoter" loading="lazy">
                             <h5>Haftpromoter</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Haftpromoter" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/selllador.png" alt="2K-Sellador" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="2k-sellador sellador">
+                        <div class="product-card">
+                            <img src="images/selllador.png" alt="2K-Sellador" loading="lazy">
                             <h5>2K-Sellador</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%202K-Sellador" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 6. Barnices -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Barnices</h2>
+            <div class="category-section" data-category="barnices">
+                <h2 class="category-section-title">Barnices</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/c310.png" alt="C310 MS 5:1" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="c310 ms barniz">
+                        <div class="product-card">
+                            <img src="images/c310.png" alt="C310 MS 5:1" loading="lazy">
                             <h5>C310 MS 5:1</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20C310%20MS%205%3A1" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/c50.png" alt="C50 MS Premium 2:1" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="c50 ms premium barniz">
+                        <div class="product-card">
+                            <img src="images/c50.png" alt="C50 MS Premium 2:1" loading="lazy">
                             <h5>C50 MS Premium 2:1</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20C50%20MS%20Premium%202%3A1" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/c210.png" alt="C210 MS Premium 2:1" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="c210 ms premium barniz">
+                        <div class="product-card">
+                            <img src="images/c210.png" alt="C210 MS Premium 2:1" loading="lazy">
                             <h5>C210 MS Premium 2:1</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20C210%20MS%20Premium%202%3A1" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 7. Barnices HS Anti-rayones -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Barnices HS Anti-rayones</h2>
+            <div class="category-section" data-category="barnices">
+                <h2 class="category-section-title">Barnices HS Anti-rayones</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/cs90.png" alt="CS90 HS" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="cs90 hs barniz anti-rayones">
+                        <div class="product-card">
+                            <img src="images/cs90.png" alt="CS90 HS" loading="lazy">
                             <h5>CS90 HS</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20CS90%20HS" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/cs96.png" alt="CS96 HS" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="cs96 hs barniz anti-rayones">
+                        <div class="product-card">
+                            <img src="images/cs96.png" alt="CS96 HS" loading="lazy">
                             <h5>CS96 HS</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20CS96%20HS" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 8. Línea Express -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Línea Express</h2>
+            <div class="category-section" data-category="express">
+                <h2 class="category-section-title">Línea Express</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/fx4.png" alt="Fondo HS FX4" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="fondo hs fx4 express">
+                        <div class="product-card">
+                            <img src="images/fx4.png" alt="Fondo HS FX4" loading="lazy">
                             <h5>Fondo HS FX4</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Fondo%20HS%20FX4" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/rapidfillerSpray.png" alt="Rapidfiller Spray" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="rapidfiller spray express aerosol">
+                        <div class="product-card">
+                            <img src="images/rapidfillerSpray.png" alt="Rapidfiller Spray" loading="lazy">
                             <h5>Rapidfiller Spray</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Rapidfiller%20Spray" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/acelerante.png" alt="Acelerante" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="acelerante express">
+                        <div class="product-card">
+                            <img src="images/acelerante.png" alt="Acelerante" loading="lazy">
                             <h5>Acelerante</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Acelerante" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 9. Catalizadores -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Catalizadores</h2>
+            <div class="category-section" data-category="catalizadores">
+                <h2 class="category-section-title">Catalizadores</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/hs10.png" alt="HS 10" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="hs 10 catalizador">
+                        <div class="product-card">
+                            <img src="images/hs10.png" alt="HS 10" loading="lazy">
                             <h5>HS 10</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20HS%2010" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/hs25.png" alt="HS 25" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="hs 25 catalizador">
+                        <div class="product-card">
+                            <img src="images/hs25.png" alt="HS 25" loading="lazy">
                             <h5>HS 25</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20HS%2025" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/ms10.png" alt="MS 10" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="ms 10 catalizador">
+                        <div class="product-card">
+                            <img src="images/ms10.png" alt="MS 10" loading="lazy">
                             <h5>MS 10</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20MS%2010" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/ms25.png" alt="MS 25" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="ms 25 catalizador">
+                        <div class="product-card">
+                            <img src="images/ms25.png" alt="MS 25" loading="lazy">
                             <h5>MS 25</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20MS%2025" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/d10.png" alt="D10" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="d10 catalizador">
+                        <div class="product-card">
+                            <img src="images/d10.png" alt="D10" loading="lazy">
                             <h5>D10</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20D10" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/d25.png" alt="D25" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="d25 catalizador">
+                        <div class="product-card">
+                            <img src="images/d25.png" alt="D25" loading="lazy">
                             <h5>D25</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20D25" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/H5.png" alt="H5" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="h5 catalizador">
+                        <div class="product-card">
+                            <img src="images/H5.png" alt="H5" loading="lazy">
                             <h5>H5</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Catalizador%20H5" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 10. Diluyentes -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Diluyentes</h2>
+            <div class="category-section" data-category="diluyentes">
+                <h2 class="category-section-title">Diluyentes</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/v25.png" alt="V25" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="v25 diluyente">
+                        <div class="product-card">
+                            <img src="images/v25.png" alt="V25" loading="lazy">
                             <h5>V25</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Diluyente%20V25" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/hslooser.png" alt="HS-Löser" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="hs-löser looser diluyente">
+                        <div class="product-card">
+                            <img src="images/hslooser.png" alt="HS-Löser" loading="lazy">
                             <h5>HS-Löser</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20HS-L%C3%B6ser" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/pu.png" alt="PU Servint" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="pu servint diluyente">
+                        <div class="product-card">
+                            <img src="images/pu.png" alt="PU Servint" loading="lazy">
                             <h5>PU Servint</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20PU%20Servint" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 11. Sistema de pintura -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Sistema de pintura</h2>
+            <div class="category-section" data-category="pintura">
+                <h2 class="category-section-title">Sistema de pintura</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/bc.png" alt="BC Poliester" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="bc poliester basecoat">
+                        <div class="product-card">
+                            <img src="images/bc.png" alt="BC Poliester" loading="lazy">
                             <h5>BC Poliester</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20BC%20Poliester" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/vdg.png" alt="BC-VDG" class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="bc-vdg basecoat">
+                        <div class="product-card">
+                            <img src="images/vdg.png" alt="BC-VDG" loading="lazy">
                             <h5>BC-VDG</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20BC-VDG" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/oc.png" alt="OC Poliuretano-HS" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="oc poliuretano hs">
+                        <div class="product-card">
+                            <img src="images/oc.png" alt="OC Poliuretano-HS" loading="lazy">
                             <h5>OC Poliuretano-HS</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20OC%20Poliuretano-HS" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/superwhite.png" alt="Poliuretano Superwhite" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="poliuretano superwhite blanco">
+                        <div class="product-card">
+                            <img src="images/superwhite.png" alt="Poliuretano Superwhite" loading="lazy">
                             <h5>Poliuretano Superwhite</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Poliuretano%20Superwhite" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/superred.png" alt="Poliuretano SuperRed" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="poliuretano superred rojo">
+                        <div class="product-card">
+                            <img src="images/superred.png" alt="Poliuretano SuperRed" loading="lazy">
                             <h5>Poliuretano SuperRed</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Poliuretano%20SuperRed" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 12. Aerosoles para plásticos -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Aerosoles para plásticos</h2>
+            <div class="category-section" data-category="aerosoles">
+                <h2 class="category-section-title">Aerosoles para plásticos</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/bumper.png" alt="Bumper Paint" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="bumper paint aerosol plástico">
+                        <div class="product-card">
+                            <img src="images/bumper.png" alt="Bumper Paint" loading="lazy">
                             <h5>Bumper Paint</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Bumper%20Paint" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/kustom.png" alt="Kunstofflack" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="kunstofflack kustom aerosol plástico">
+                        <div class="product-card">
+                            <img src="images/kustom.png" alt="Kunstofflack" loading="lazy">
                             <h5>Kunstofflack</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Kunstofflack" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 13. Recubrimientos / Protección -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">Recubrimientos / Protección</h2>
+            <div class="category-section" data-category="proteccion">
+                <h2 class="category-section-title">Recubrimientos / Protección</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/protector.png" alt="Mipa Protector-2K" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mipa protector-2k recubrimiento">
+                        <div class="product-card">
+                            <img src="images/protector.png" alt="Mipa Protector-2K" loading="lazy">
                             <h5>Mipa Protector-2K</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Mipa%20Protector-2K" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/antigravilla.png" alt="Antigravilla" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="antigravilla protección">
+                        <div class="product-card">
+                            <img src="images/antigravilla.png" alt="Antigravilla" loading="lazy">
                             <h5>Antigravilla</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Antigravilla" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- 14. MP Herramientas y Complementarios -->
-            <div class="mb-5 p-4 bg-white rounded shadow">
-                <h2 class="fw-bold mb-4" style="color: #e30613;">MP Herramientas y Complementarios</h2>
+            <div class="category-section" data-category="herramientas">
+                <h2 class="category-section-title">MP Herramientas y Complementarios</h2>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/pistola.png" alt="Pistola UHS" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="pistola uhs herramienta">
+                        <div class="product-card">
+                            <img src="images/pistola.png" alt="Pistola UHS" loading="lazy">
                             <h5>Pistola UHS</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20Pistola%20UHS" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/aplicadoresM.png" alt="MP Set aplicadores metálicos x 4"
-                                class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp set aplicadores metálicos herramienta">
+                        <div class="product-card">
+                            <img src="images/aplicadoresM.png" alt="MP Set aplicadores metálicos x 4" loading="lazy">
                             <h5>MP Set aplicadores metálicos x 4</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Set%20aplicadores%20met%C3%A1licos%20x4" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/aplicadoresP10.png" alt="MP Set aplicadores plásticos x 10"
-                                class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp set aplicadores plásticos 10 herramienta">
+                        <div class="product-card">
+                            <img src="images/aplicadoresP10.png" alt="MP Set aplicadores plásticos x 10" loading="lazy">
                             <h5>MP Set aplicadores plásticos x 10</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Set%20aplicadores%20pl%C3%A1sticos%20x10" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/lijado.png" alt="MP Bloque de lijado con velcro" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp bloque lijado velcro herramienta">
+                        <div class="product-card">
+                            <img src="images/lijado.png" alt="MP Bloque de lijado con velcro" loading="lazy">
                             <h5>MP Bloque de lijado con velcro</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Bloque%20de%20lijado" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/vasosMezcla.png" alt="MP Vasos para mezcla" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp vasos mezcla herramienta">
+                        <div class="product-card">
+                            <img src="images/vasosMezcla.png" alt="MP Vasos para mezcla" loading="lazy">
                             <h5>MP Vasos para mezcla</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Vasos%20para%20mezcla" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/aplicdoresP4.png" alt="MP Set aplicadores plásticos x 4"
-                                class="img-fluid mb-3" style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp set aplicadores plásticos 4 herramienta">
+                        <div class="product-card">
+                            <img src="images/aplicdoresP4.png" alt="MP Set aplicadores plásticos x 4" loading="lazy">
                             <h5>MP Set aplicadores plásticos x 4</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Set%20aplicadores%20pl%C3%A1sticos%20x4" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/regla mezcla.png" alt="MP Reglas de mezcla" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp reglas mezcla herramienta">
+                        <div class="product-card">
+                            <img src="images/regla mezcla.png" alt="MP Reglas de mezcla" loading="lazy">
                             <h5>MP Reglas de mezcla</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Reglas%20de%20mezcla" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/reglamini.png" alt="MP Regla mini" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp regla mini herramienta">
+                        <div class="product-card">
+                            <img src="images/reglamini.png" alt="MP Regla mini" loading="lazy">
                             <h5>MP Regla mini</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Regla%20mini" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/interface.png" alt="MP Interface pad" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp interface pad herramienta">
+                        <div class="product-card">
+                            <img src="images/interface.png" alt="MP Interface pad" loading="lazy">
                             <h5>MP Interface pad</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Interface%20pad" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/hidrogentape.png" alt="MP Hydrogreen tape" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp hydrogreen tape cinta herramienta">
+                        <div class="product-card">
+                            <img src="images/hidrogentape.png" alt="MP Hydrogreen tape" loading="lazy">
                             <h5>MP Hydrogreen tape</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Hydrogreen%20tape" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="product-card text-center border border-primary rounded-3 shadow-lg p-4 bg-white">
-                            <img src="images/tapePro.png" alt="MP Tape pro" class="img-fluid mb-3"
-                                style="max-width: 150px;">
+                    <div class="col-md-4 col-sm-6 product-col" data-name="mp tape pro cinta herramienta">
+                        <div class="product-card">
+                            <img src="images/tapePro.png" alt="MP Tape pro" loading="lazy">
                             <h5>MP Tape pro</h5>
+                            <a href="https://wa.me/593987369760?text=Hola%20Insycar%2C%20quiero%20cotizar%3A%20MP%20Tape%20pro" target="_blank" class="btn-wa-product"><i class="fab fa-whatsapp"></i> Cotizar</a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Mensaje sin resultados -->
+            <div id="noResultsMessage" class="text-center py-5" style="display:none;">
+                <i class="fas fa-search fa-2x mb-3" style="color:#ccc;"></i>
+                <p class="lead text-muted">No se encontraron productos para tu búsqueda.</p>
+                <button class="btn btn-outline-danger" onclick="document.getElementById('searchInput').value=''; document.getElementById('searchForm').dispatchEvent(new Event('reset'));">Limpiar búsqueda</button>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-5 mt-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-2">
-                    <h5 class="text-uppercase fw-bold text-cyan">Nosotros</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="sobreNosotors.html" class="text-white">Sobre nosotros</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fw-bold text-cyan">Servicios</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Asesoría Técnica</a></li>
-                        <li><a href="#" class="text-white">Productos de alta calidad</a></li>
-                        <li><a href="#" class="text-white">Mezcla de Colores</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3">
-                    <h5 class="text-uppercase fw-bold text-cyan">Aviso Legal</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#" class="text-white">Política de Privacidad</a></li>
-                        <li><a href="#" class="text-white">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
+    <section class="cta-band reveal">
+        <div class="container cta-band-content">
+            <div>
+                <h2>¿No encontraste lo que buscas?</h2>
+                <p>Escríbenos y te ayudamos a encontrar el producto adecuado para tu proyecto.</p>
             </div>
+            <a href="https://wa.me/593987369760?text=Hola%20Insycar,%20busco%20un%20producto%20específico" target="_blank" class="btn btn-light btn-lg">
+                <i class="fab fa-whatsapp me-2"></i>Consultar por WhatsApp
+            </a>
+        </div>
+    </section>
 
-            <hr class="bg-light my-4">
-
-            <div class="text-center my-4">
-                <img src="images/InsycarLogo.jpg" alt="Insycar" class="img-fluid" style="max-height: 100px;">
+    <footer class="footer-pro">
+        <div class="container footer-grid">
+            <div>
+                <img src="images/InsycarLogo.jpg" alt="Insycar" class="footer-logo">
+                <p>Distribuimos confianza para el repintado automotriz profesional.</p>
             </div>
-
-            <div class="text-center mb-4">
-                <a href="https://www.facebook.com/share/19xnrtgcd5/" class="text-white mx-3"><i
-                        class="fab fa-facebook-f fa-2x"></i></a>
+            <div>
+                <h5>Empresa</h5>
+                <ul>
+                    <li><a href="sobreNosotors.html">Sobre nosotros</a></li>
+                    <li><a href="contatanos.html">Contacto</a></li>
+                </ul>
             </div>
-
-            <div class="text-center">
-                <p class="mb-0">Insycar © Todos los derechos reservados © 2025</p>
-                <p class="mb-0">Movemos calidad</p>
+            <div>
+                <h5>Soluciones</h5>
+                <ul>
+                    <li><a href="productos.html">Barnices</a></li>
+                    <li><a href="productos.html">Fondos</a></li>
+                    <li><a href="productos.html">Masillas</a></li>
+                </ul>
             </div>
+            <div>
+                <h5>Contacto</h5>
+                <ul>
+                    <li><a href="tel:+593987369760">+593 98 736 9760</a></li>
+                    <li><a href="https://wa.me/593987369760" target="_blank">WhatsApp</a></li>
+                    <li>Ambato, Ecuador</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            Insycar © 2026 | Movemos calidad
         </div>
     </footer>
 
-    <!-- WhatsApp flotante -->
     <div class="whatsapp-float">
-        <a href="https://wa.me/593987369760" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Insycar"
-                style="width: 60px;">
+        <a href="https://wa.me/593987369760" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
         </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="js/scripts.js"></script>
 </body>
 
